@@ -51,8 +51,18 @@ function App() {
           <h1>Login</h1>
         
         <div className="one">
-          <input onChange={handleuse} type="text" placeholder="username" name="username"></input>
-          <input onChange={handlepass} placeholder="password" name="password"></input>
+          <label>
+            Username:
+            <input onChange={handleuse} type="text" placeholder="username" name="username"></input>
+
+          </label>
+          <label>
+            Password:
+            <input onChange={handlepass} placeholder="password" name="password"></input>
+          </label>
+          
+          
+        
           <button type="submit" onClick={check}>Submit</button>
 
         </div>
